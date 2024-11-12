@@ -21,12 +21,12 @@ function handleResponse(response) {
     setResult(response.data[0])
 }
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type="search" placeholder='Type a word...' onChange={SearchedWord}/>
-                <button>Search</button>
-            </form>
-            <Result result={result} />
-        </div>
+      <div>
+        <form className='row' onSubmit={handleSubmit}>
+            <input type="search" className='col-9' onChange={SearchedWord} placeholder='Search for a word...'  />
+            <button className='col-2' >Search</button>
+        </form>
+        <Result result={result} />
+      </div>
     )
 }

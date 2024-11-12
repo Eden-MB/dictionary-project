@@ -1,10 +1,11 @@
 import React from 'react';
+import "./Results.css";
 
 export default function Result(props) {
     console.log(props.result)
     if(props.result) {
         return (
-        <div>
+        <div className='results'>
             <h3>{props.result.word}</h3>
             {props.result.meanings.map((meaning, index) => { 
                 return (
