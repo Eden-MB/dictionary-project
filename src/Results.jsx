@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Results.css";
+import Synonyms from './Synonyms';
 
 export default function Result(props) {
     console.log(props.result)
@@ -14,8 +15,10 @@ export default function Result(props) {
                         {meaning.partOfSpeech}
                         </em></b>
                         <br/>
-                        {meaning.definitions[0].definition}
+                        <strong>Definition:</strong>{meaning.definitions[0].definition}
                         <br/><br/>
+                        <Synonyms synonyms={meaning.synonyms}/>
+
                         </div>)})}
                     </div>)
             

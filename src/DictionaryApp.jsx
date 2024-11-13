@@ -27,6 +27,7 @@ function handleResponse(response) {
             <button className='col-2' >Search</button>
         </form>
         <Result result={result} />
+
       </div>
     )
 }
