@@ -1,8 +1,53 @@
 .results {
-    background-color: lightblue;
-    border-radius: 8px;
-    margin-top: 18px;
-    margin-right: 52px;
+    background-color: rgba(255, 255, 255, 0.635);
    
+        padding: 20px;
+    width: 700px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.name {
+margin-bottom: 10px;
+width: 700px;
+padding: 10px 20px;
+display: flex;
+flex-direction: row;
+}
+.speech {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    
+}
+
+.name h3 {
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 3px;
+    color: white;
+}
+.check {
+    font-weight: normal;
+    font-size: 30px;
+    color: rgb(103, 162, 229);
+}
+.phonetics {
+    margin-top: 12px;
+    margin-left: 15px;
+    color: white;
+    font-size: 16px;
+}
+.definition {
+    margin: 0px 25px;
+}
+
+.example {
+    color: white;
+    font-size: 13px;
+    margin-left: 26px;
+    font-style:italic;
+    text-decoration: transparent;
+    
 
 }

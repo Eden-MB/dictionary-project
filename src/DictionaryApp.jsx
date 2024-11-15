@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import "./DictionaryApp.css"
 import axios from 'axios';
 import Result from './Results';
 
@@ -18,13 +17,13 @@ function handleSubmit(event) {
     axios.get(url).then(handleResponse)
 }
 function handleResponse(response) {
+    console.log(response.data);
     setResult(response.data[0])
 }
     return (
-      <div>
+      <div className='form'>
         <form className='row' onSubmit={handleSubmit}>
-            <input type="search" className='col-9' onChange={SearchedWord} placeholder='Search for a word...'  />
-            <button className='col-2' >Search</button>
+            <input type="search" className='col-11' onChange={SearchedWord} placeholder='Search for a word...'  />
         </form>
         <Result result={result} />
 
