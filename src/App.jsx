@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import DictionaryApp from './DictionaryApp';
-import axios from 'axios';
 import './App.css';
 
 
